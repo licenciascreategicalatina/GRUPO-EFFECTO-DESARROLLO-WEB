@@ -1091,7 +1091,7 @@ courses
 */
 
 section.our-courses {
-  background-image: url(../images/meetings-bg.jpg);
+ 
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1291,6 +1291,35 @@ section.our-facts h2 {
 .new-students {
   margin-top: 45px;
 }
+
+/* 
+---------------------------------------------
+facts2
+--------------------------------------------- 
+*/
+
+.card1{
+  background-color: #f7f7f7;
+  
+}
+
+.card2{
+  margin-top: auto;
+  background-color: rgb(208, 20, 20);
+  
+}
+.card-img-top2{
+  background-color: #2d2d31;
+  
+  
+  
+}
+
+
+
+
+
+
 
 
 /* 
