@@ -89,6 +89,9 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fondoGlobal{
+  background-color: rgba(171,43,29,255) !important;
+}
 a {
   text-decoration: none !important;
   color: #3CF;
@@ -189,11 +192,11 @@ body {
 
 .section-heading h2 {
   line-height: 40px;
-  margin-top: 0px;
-  margin-bottom: 50px; 
+  margin-top: 40px;
+  margin-bottom: 0; 
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(243, 237, 237, 0.15);
-  font-size: 22px;
+  font-size: 102px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
@@ -209,7 +212,7 @@ header
 .sub-header {
   background-color: #1f272b;
   position: relative;
-  z-index: 1111;
+  z-index: 99999;
 }
 
 .sub-header .left-content p {
@@ -773,11 +776,14 @@ services
   text-align: center;
   color: rgb(203, 23, 23);
   padding: 40px;
+  height: 350px !important;
+
 }
 
 .services .item .icon {
-  max-width: 60px;
+  max-width: 90px;
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .services .item h4 {
@@ -880,11 +886,12 @@ section.upcoming-meetings {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 230px;
-  padding-bottom: 110px;
+  padding-bottom: 10px;
 }
 
 section.upcoming-meetings .section-heading {
-  text-align: center;
+  text-align: left;
+  padding-left: 16%;
 }
 
 section.upcoming-meetings .categories {
@@ -1012,13 +1019,14 @@ section.apply-now {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 140px 0px;
+  padding: 30px 0px;
 }
 
 section.apply-now .item {
   background-color: rgb(0, 0, 0);
   padding: 40px;
   margin-bottom: 30px;
+  height: 200px;
 }
 
 section.apply-now .item h3 {
@@ -1032,6 +1040,7 @@ section.apply-now .item h3 {
 section.apply-now .item p {
   color: rgb(252, 252, 252);
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .accordions {
@@ -1054,6 +1063,11 @@ section.apply-now .item p {
   cursor: pointer;
   transition: color 200ms ease-in-out;
   border-bottom: 1px solid #fff;
+}
+
+.img_diferencial{
+  width: 60%;
+  color: white;
 }
 @media screen and (min-width: 768px) {
   .accordion-head {
@@ -1247,11 +1261,11 @@ section.our-facts {
   padding: 140px 0px 125px 0px;
 }
 
+
 section.our-facts h2 {
-  font-size: 50px;
-  color: rgb(234, 16, 16);
+  font-size: 102px !important;
+  color: rgb(129, 126, 126) !important;
   line-height: 50px;
-  font-weight: 700;
   letter-spacing: 0.5px;
   margin-bottom: 50px;
 }
@@ -1275,17 +1289,18 @@ section.our-facts h2 {
     font-weight: 700;
     font-size: 36px;
 }
-.count-title {
-    font-size: 35px;
-    font-weight: 800;
+.count-title span {
+    font-size: 35px !important;
+    font-family: 'Raleway', sans-serif !important;
     color: rgb(253, 251, 251);
-    letter-spacing: 0.5px;
 }
-.count-title2 {
-  font-size: 35px;
+
+.count-title {
+  font-size: 65px;
   font-weight: 800;
-  color: rgb(220, 38, 38);
+  color: rgba(171,43,29,255) !important;
   letter-spacing: 0.5px;
+  line-height: 45px;
 }
 
 .new-students {
@@ -1298,39 +1313,135 @@ facts2
 --------------------------------------------- 
 */
 
+.titulo{
+  font-size: 42px !important;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.our-facts2{
+  display: block;
+}
+
+
+.card_hijo_2{
+  width: 50% !important;
+  height: 50vh !important; 
+  background-color: rgb(12, 10, 10);
+}
+
+.card_hijo p{
+  color: rgb(252, 252, 252);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
 .card1{
   background-color: #f7f7f7;
-  
+  height: 340px !important;
+  padding: 0;
+
 }
 
 .card2{
   margin-top: auto;
   background-color: rgb(208, 20, 20);
-  
+  height: 340px !important;
+  padding: 0;
 }
+
+
 .card-img-top2{
-  background-color: #000000;
-  
-  
-  
+  background-color: rgba(58,56,56,255);
+  width: 100%;
+  margin: 0;
 }
+
 .card3{
-  background-color: #ffffff;
-  border-radius: 20px;
+  background-color: rgba(235,235,235,255);
+  border-radius: 10px;
   text-align: center;
+  width: 35%;
+  margin: 15px;
+  padding: 20px;
+
 }
 
 .card4{
   margin-top: auto;
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  background-color: rgba(235,235,235,255);
+  border-radius: 10px;
   text-align: center;
-  
+  width: 35%;
+  margin: 15px;
+  padding: 20px;
+}
+
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_hijo{
+  width: 50% !important;
+  height: 60vh !important; 
+  background-color: white;
+}
+
+.card_hijo p{
+  color: rgb(252, 252, 252);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.card-title  {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(171,43,29,255) !important;
+}
+
+.card-title span {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: rgba(171,43,29,255) !important;
+}
+
+.iconUser{
+  width: 100px !important;
+  color: rgba(171,43,29,255) !important;
+  margin-bottom: 40px !important;
+  margin-top: 40px;
+}
+
+.contendorUser h5{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: black !important;
+}
+
+.contendorUser h6{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(117, 3, 3)!important;
+  margin: 20px 10px ;
+  font-weight: bold !important;
+}
+
+.card-text{
+  font-size: 17px !important;
+}
+.card-text img{
+  width: 30px;
+  margin-right: 5px;
+
 }
 
 /* 
 ---------------------------------------------
-facts3
+facts3 yeison
 --------------------------------------------- 
 */
 
@@ -1347,18 +1458,33 @@ section.our-facts3{
  background-size: cover;
   width: 560px;
   height: 500px;
-
 }
 
-
-section.our-facts h2 {
-  font-size: 50px;
-  color: rgb(234, 16, 16);
-  line-height: 50px;
-  font-weight: 700;
+.card-title_2  { 
+  line-height: 30px;
   letter-spacing: 0.5px;
-  margin-bottom: 50px;
+  color: rgba(171,43,29,255) !important;
+
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+
 }
+
+.card-title  {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(171,43,29,255) !important;
+}
+
+.card-text3 {
+  font-size: 25px;
+  color: rgb(255, 255, 255) !important;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
 
 .count-area-content {
   text-align: center;
@@ -1404,17 +1530,17 @@ facts4
 
 section.our-facts4{
   background-image: url(../images/Web\ 1920\ –\ 5.png);
-   background-position: center center;
-  
+   background-position:center;
    background-repeat: no-repeat;
    background-size: cover;
-   padding: 140px 0px 125px 0px;
+   height: 60vh;
+   border-bottom: 20px solid rgb(102, 27, 0);
  }
  
  .foto{
   background-size: cover;
    width: 560px;
-   height: 500px;
+   height: 90vh;
  
  }
  
@@ -1464,6 +1590,18 @@ section.our-facts4{
    margin-top: 45px;
  }
  
+
+ /* 
+---------------------------------------------
+facts6
+--------------------------------------------- 
+*/
+ section.our-facts6{
+   height: 100vh;
+   border-bottom: 20px solid rgb(102, 27, 0);
+ }
+ 
+
  /* 
 ---------------------------------------------
 facts5
@@ -1476,7 +1614,7 @@ section.our-facts5{
   
    background-repeat: no-repeat;
    background-size: cover;
-   padding: 140px 0px 125px 0px;
+   padding: 140px 0px 0 0px;
  }
  
  .foto{
@@ -1688,8 +1826,10 @@ section.contact-us .right-info ul li span {
 .footer {
   text-align: center;
   margin-top: 140px;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 50px 0px;
+  background-color: #712017 !important;
+  padding: 30px  0;
+  width: 100%;
+  color: white;
 }
 .footer p {
   text-transform: uppercase;
@@ -1701,7 +1841,22 @@ section.contact-us .right-info ul li span {
   color: #f5a425;
 }
 
+.fuente_color h2, p{
+  color: white;
+}
 
+.fuente_color h2{
+  font-size: 22px;
+}
+
+.fuente_color p{
+  margin: 10px 0;
+}
+
+
+.logo_footer{
+  width: 230px;
+}
 
 /*
 ---------------------------------------------
