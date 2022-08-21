@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+ 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -15,6 +15,7 @@
     rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
 
   <!-- Additional CSS Files -->
@@ -32,25 +33,15 @@
 
 <body>
 
-  <!-- Sub Header -->
-  <div class="sub-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-sm-8">
 
-        </div>
-
-      </div>
-    </div>
-  </div>
-  </div>
 
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky" style="z-index: 999;">
     <div class="container">
       <div class="row">
-        <div class="col-12 d-flex  justify-content-around">
-          <img src="assets/images/logo_.png"  style="width: 10%;" alt="">
+        <div class="col-12 d-flex header-sticky justify-content-around">
+          <img class="logo_header" id="logo_rojo" src="assets/images/logo_color.png"  style="display: none;" alt="">
+          <img class="logo_header" id="logo_negro" src="assets/images/logo_.png"  alt="">
 
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
@@ -60,7 +51,7 @@
 
               <li class="scroll-to-section"><a href="#top" class="active">HOME</a></li>
 
-              <li class="scroll-to-section"><a href="#ABOUT">ABOUT US</a></li>
+              <li class="scroll-to-section"><a href="#ABOUT">ABOUT</a></li>
 
               </li>
 
@@ -210,7 +201,7 @@
             <div class="section-heading">
               <h2> ENFOQUE</h2>
             </div>
-            <div class="container mt-5">
+            <div class="container">
               <div class="cards">
                 <div class="card_hijo p-5">
                   <h4 class="card-title"><span>Cobertura de</span> <br> servicios geograficos.</h4>
@@ -226,8 +217,8 @@
                   <img class="card-img-top2 img-fluid" src="assets/images/Web 1920 – 6.png">
                 </div>
                 <div class="card_hijo p-5 fondoGlobal">
-                  <h2 class="count-title" style="color: white !important;">STAFF</h2>
-                  <h2 class="count-title" style="color: white !important;">ESPECIALIZADO</h2>
+                  <h3 class="count-title" id="tituloNegro" style="color: white !important;">STAFF</h2>
+                  <h3 class="count-title" style="color: white !important;">ESPECIALIZADO</h3>
                   <p class="card-text2 mt-4">nuestro personal esta formado por expertos que a menudo tienen una decada o
                     mas en su campo. </p>
                 </div>
@@ -246,58 +237,28 @@
 
         <div class="col-lg-12" style="z-index: 1;">
           <div class="section-heading">
-            <h2> Que Hacemos</h2>
+            <h2 class="titulo_que_hacemos"> Que Hacemos</h2>
           </div>
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="cards-wrapper">
-                  <div class="card">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="owl-service-item owl-carousel">
+    
+                <div class="item card-star " style="border-right: 4px solid orange;">
                     <img src="assets/images/Web 1920 – 4.png" class="card-img-top" alt="...">
                   </div>
-                  <div class="card d-none d-md-block">
-                    <img src="assets/images/Escenario counter vr 2.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="assets/images/Web 1920 – 2.png" class="card-img-top" alt="...">
-                  </div>
+    
+                <div class="item card-star " style="border-right: 4px solid orange;">
+                  <img  src="assets/images/Escenario counter vr 2.png"  class="card-img-top" alt="...">
+                </div>
+    
+                <div class="item card-star " style="border-right: 4px solid orange;">
+                  <img src="assets/images/Web 1920 – 4.png" class="card-img-top" alt="...">
+                </div>
+    
+                <div class="item card-star " style="border-right: 4px solid orange;">
+                  <img  src="assets/images/Escenario counter vr 2.png"  class="card-img-top" alt="...">
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="cards-wrapper">
-                  <div class="card">
-                    <img src="assets/images/Escenario counter vr 2.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="assets/images/Escenario counter vr 2.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="assets/images/Escenario counter vr 2.png" class="card-img-top" alt="...">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="cards-wrapper">
-                    <div class="card">
-                      <img src="assets/images/Escenario counter vr 2.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card d-none d-md-block">
-                      <img src="assets/images/Escenario counter vr 2.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card d-none d-md-block">
-                      <img src="assets/images/Escenario counter vr 2.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              </a>
             </div>
           </div>
         </div>
@@ -309,7 +270,7 @@
   <section class="our-facts3" id="BLOG">
     <div class="container">
           <div class="row">
-              <div class="cards">
+              <div class="cards cards_hijos2">
                 <div class="card_hijo_2 p-5">
                   <h4 class="card-title_2">Estrategia</h4>
                   <p class="card-text3 mt-4">Te ayudamos a desarrollar una estrategia de marketing ganadora que maximice los resultados</p>
@@ -323,7 +284,7 @@
                   <p class="card-text3 mt-4">Producimos diferentes productos promocionale y publicitarios, además de soluciones en artes graficas y la implementación de conceptos escenagraficos. </p>
                 </div>
                 <div class="card_hijo_2 p-5">
-                  <h4 class="card-title_2">ejecución campo</h4>
+                  <h4 class="card-title_2">Ejecución campo</h4>
                   <p class="card-text3 mt-4">Experiencia en el mercado panameño y de Centroamérica, teniendo en cuenta el contexto local de cada país donde se ejecuten las ideas. </p>
                 </div>
               </div>
@@ -341,7 +302,7 @@
             <div>
               <h3 class="titulo">Contactos comerciales</h3>
             </div>
-            <div class="row text-center d-flex justify-content-center">
+            <div class="row contenedor_cartas text-center d-flex justify-content-center">
                 <div class="card4 contendorUser">
                   <div class="card-body">
                     <div class="icon1">
@@ -401,7 +362,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-9">
-          <div class="row ">
+          <div class="row footer_content">
             <div class="col-3 fuente_color">
               <h2 class="mb-5">Grupo Effecto</h2>
               <p>Lab de innovación</p>
@@ -429,7 +390,7 @@
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="col-4">
+          <div class="col-4 footer-logo">
             <img class="logo_footer" src="assets/images/logo_.png" alt="">
           </div>
         </div>
@@ -442,10 +403,10 @@
 
   <section class="wraper" id="contact">
       <div class="row col-8 footer">
-        <div class="col-3">Copyright © 2022 - Creatégica</div>
-        <div class="col-3">Bogotá, Colombia</div>
-        <div class="col-3">+57 300 7918269</div>
-        <div class="col-3">+57 311 8301512</div>
+        <div class="col-3 div_footer">Copyright © 2022 - Creatégica</div>
+        <div class="col-3 div_footer">Bogotá, Colombia</div>
+        <div class="col-3 div_footer">+57 300 7918269</div>
+        <div class="col-3 div_footer">+57 311 8301512</div>
       </div>
     </div>
   </section>
@@ -462,6 +423,8 @@
   <script src="assets/js/video.js"></script>
   <script src="assets/js/slick-slider.js"></script>
   <script src="assets/js/custom.js"></script>
+
+
   <script>
     //according to loftblog tut
     $('.nav li:first').addClass('active');

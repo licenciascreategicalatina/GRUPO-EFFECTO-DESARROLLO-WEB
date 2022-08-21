@@ -9,8 +9,13 @@
 
 	  if (scroll >= box - header) {
 	    $("header").addClass("background-header");
+	    $("#logo_rojo").show();
+	    $("#logo_negro").hide();
+
 	  } else {
 	    $("header").removeClass("background-header");
+		$("#logo_rojo").hide();
+	    $("#logo_negro").show();
 	  }
 	});
 	
@@ -155,6 +160,10 @@
 		$(".menu-trigger").on('click', function() {	
 			$(this).toggleClass('active');
 			$('.header-area .nav').slideToggle(200);
+			$("#logo_negro").hide();
+			$("#logo_rojo").hide();
+
+			//yeison 
 		});
 	}
 
@@ -168,7 +177,8 @@
 				var width = $(window).width();
 				if(width < 991) {
 					$('.menu-trigger').removeClass('active');
-					$('.header-area .nav').slideUp(200);	
+					$('.header-area .nav').slideUp(200);
+
 				}				
 				$('html,body').animate({
 					scrollTop: (target.offset().top) - 80
