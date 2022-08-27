@@ -9,13 +9,13 @@
 
 	  if (scroll >= box - header) {
 	    $("header").addClass("background-header");
-	    $("#logo_rojo").show();
+	    $("#logo_rojo").hide();
 	    $("#logo_negro").hide();
 
 	  } else {
 	    $("header").removeClass("background-header");
 		$("#logo_rojo").hide();
-	    $("#logo_negro").show();
+	    $("#logo_negro").hide();
 	  }
 	});
 	
@@ -303,11 +303,16 @@
 
     $(window).scroll(function() {
 
+
+
         if (visible($('.count-digit'))) {
+
             if ($('.count-digit').hasClass('counter-loaded')) return;
             $('.count-digit').addClass('counter-loaded');
 
+
             $('.count-digit').each(function() {
+
                 var $this = $(this);
                 jQuery({
                     Counter: 0
